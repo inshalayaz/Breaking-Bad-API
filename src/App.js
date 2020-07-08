@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header'
 import CharactersGrid from './components/characters/CharactersGrid'
 import Search from './components/Search'
+import Top from './components/Top'
 
 function App() {
 
@@ -25,6 +26,7 @@ useEffect(()=>{
 
   return (
     <div className="App">
+    <Top />
      <Header />
      <Search getQuery={(q)=> setQuery(q)} />
      <CharactersGrid loading={loading} items={items}/>
